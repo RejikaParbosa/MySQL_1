@@ -1,0 +1,14 @@
+
+INSERT INTO cust VALUES(a01,'Bayross','Ivan','sa',6125467);
+INSERT INTO cust VALUES(a02,'Saitwal','Vandana','mu',5560379);
+INSERT INTO cust VALUES(a03,'Jaguste','Pramada','da',4563891);
+INSERT INTO cust VALUES(a04,'Navindgi','Basu','ba',6125401);
+INSERT INTO cust VALUES(a05,'Sreedharan','Ravi','va',null);
+INSERT INTO cust VALUES(a06, null,'Rukmini','gh',5125274);
+
+
+ create table cust( cust_id int primary key, lname varchar(20), fname varchar(20), area varchar(4), phone_no number);
+
+
+Q. find the date 15 days after the current date
+select sysdate, sysdate + 15 as sys from dual;
