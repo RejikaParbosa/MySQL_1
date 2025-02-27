@@ -1,0 +1,15 @@
+CREATE TABLE Invoice (Inv_no VARCHAR2(3) PRIMARY KEY NOT NULL, Mv_no VARCHAR2(2), Cust_id VARCHAR2(3), Issue_date DATE, Return_date DATE); 
+INSERT INTO Invoice (Inv_no, Mv_no, Cust_id, Issue_date, Return_date) VALUES ('i01', '4', 'a01', TO_DATE('23-jul-93', 'DD-MON-YY'), TO_DATE('25-jul-93', 'DD-MON-YY')), 
+INSERT INTO Invoice (Inv_no, Mv_no, Cust_id, Issue_date, Return_date) VALUES
+('i02', '3', 'a02', TO_DATE('12-aug-93', 'DD-MON-YY'), TO_DATE('15-aug-93', 'DD-MON-YY')),
+ ('i03', '1', 'a02', TO_DATE('15-aug-93', 'DD-MON-YY'), TO_DATE('18-aug-93', 'DD-MON-YY')),
+INSERT INTO Invoice (Inv_no, Mv_no, Cust_id, Issue_date, Return_date) VALUES ('i04', '6', 'a03', TO_DATE('10-sep-93', 'DD-MON-YY'), TO_DATE('13-sep-93', 'DD-MON-YY')), 
+INSERT INTO Invoice (Inv_no, Mv_no, Cust_id, Issue_date, Return_date) VALUES('i05', '7', 'a04', TO_DATE('05-aug-93', 'DD-MON-YY'), TO_DATE('08-aug-93', 'DD-MON-YY')), 
+INSERT INTO Invoice (Inv_no, Mv_no, Cust_id, Issue_date, Return_date) VALUES('i06', '2', 'a06', TO_DATE('18-sep-93', 'DD-MON-YY'), TO_DATE('21-sep-93', 'DD-MON-YY')),
+ INSERT INTO Invoice (Inv_no, Mv_no, Cust_id, Issue_date, Return_date) VALUES('i07', '9', 'a05', TO_DATE('07-jul-93', 'DD-MON-YY'), TO_DATE('10-jul-93', 'DD-MON-YY')),
+INSERT INTO Invoice (Inv_no, Mv_no, Cust_id, Issue_date, Return_date) VALUES ('i08', '9', 'a01', TO_DATE('11-aug-93', 'DD-MON-YY'), TO_DATE('14-aug-93', 'DD-MON-YY')), 
+INSERT INTO Invoice (Inv_no, Mv_no, Cust_id, Issue_date, Return_date) VALUES('i09', '5', 'a03', TO_DATE('06-jul-93', 'DD-MON-YY'), TO_DATE('09-jul-93', 'DD-MON-YY')); 
+INSERT INTO Invoice (Inv_no, Mv_no, Cust_id, Issue_date, Return_date) VALUES('i10', '8', 'a06', TO_DATE('03-sep-93', 'DD-MON-YY'), TO_DATE('06-sep-93', 'DD-MON-YY'));
+
+
+CREATE TABLE Movie (Mv_no INT PRIMARY KEY, Tite VARCHAR2(50), Type VARCHAR2(20), Star VARCHAR2(50), Price DECIMAL(6, 2)); INSERT INTO Movie (Mv_no, Title, Type, Star, Price) VALUES (1, 'bloody vengeance', 'action', 'jackie chan', 180.95), (2, 'the firm', 'thriller', 'tom cruise', 200.00), (3, 'pretty woman', 'romance', 'richard gere', 150.55), (4, 'home alone', 'comedy', 'macaulay culkin', 150.00), (5, 'the fugitive', 'thriller', 'harrison ford', 200.00), (6, 'coma', 'suspense', 'michael douglas', 100.00), (7, 'dracula', 'horror', 'gary oldman', 150.25), (8, 'quick change', 'comedy', 'bill murray', 100.00), (9, 'gone with the wind', 'drama', 'clarke gable', 200.00), (10, 'carry on doctor', 'comedy', 'leslie phillips', 100.00);
