@@ -1,0 +1,28 @@
+ desc movie
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ MV_NO                                     NOT NULL NUMBER(38)
+ TITLE                                              VARCHAR2(50)
+ TYPE                                               VARCHAR2(50)
+ STAR                                               VARCHAR2(50)
+ PRICE                                              NUMBER(6,2)
+
+SQL> select title, price as original_cost,(price * 15) as new_cost from movie where price > 150;
+
+TITLE                                              ORIGINAL_COST   NEW_COST
+-------------------------------------------------- ------------- ----------
+bloody vengeance                                           180.9     2713.5
+the firm                                                     200       3000
+pretty woman                                              150.55    2258.25
+the fugitive                                                 200       3000
+dracula                                                   150.25    2253.75
+gone with the wind                                           200       3000
+
+6 rows selected.
+
+SQL> select type, count(*) as number_of_movies from movie where type in('comedy','thriller') group by type;
+
+TYPE                                               NUMBER_OF_MOVIES
+-------------------------------------------------- ----------------
+thriller                                                          2
+comedy                                                            3
